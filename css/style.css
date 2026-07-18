@@ -139,7 +139,7 @@ body{
 
 .hero-overlay{
 
-    background:rgba(0,0,0,.65);
+    background:rgba(0,0,0,.55);
 
     min-height:100vh;
 
@@ -175,7 +175,7 @@ body{
 
     font-weight:700;
 
-    line-height:1.2;
+    line-height:1.1;
 
     margin-bottom:20px;
 
@@ -276,5 +276,437 @@ body{
     width:100%;
 
 }
+.services{
+
+    padding:80px 0;
+
+}
+
+.service-content{
+
+    text-align:center;
+
+}
+
+.service-content h4{
+
+    font-size:22px;
+
+}
+
+.portfolio-preview{
+
+    padding:80px 0;
+
+}
+
+.portfolio-item img{
+
+    height:250px;
+
+}
+
+}
+
+.about{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    background:#0f8f8f;
+
+    color:#fff;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.section-title{
+
+    font-size:3.2rem;
+
+    font-weight:700;
+
+    color:#132238;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.about-text{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#666;
+
+}
+
+.about-features{
+
+    margin-top:35px;
+
+}
+
+.about-features p{
+
+    font-size:18px;
+
+    margin-bottom:18px;
+
+    font-weight:500;
+
+}
+
+.about-features i{
+
+    color:#0f8f8f;
+
+    margin-right:12px;
+
+}
+
+.about-img{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+
+    transition:.5s ease;
+
+}
+
+.about-img:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* WHY CHOOSE US */
+
+.why-us{
+
+    background:#f7f9fc;
+
+    padding:120px 0;
+
+}
+
+.section-description{
+
+    max-width:650px;
+
+    margin:20px auto 0;
+
+    color:#666;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+.why-card{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+
+    height:100%;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.15);
+
+}
+
+.why-image{
+
+    overflow:hidden;
+
+}
+
+.why-image img{
+
+    width:100%;
+
+    height:270px;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+.why-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.why-content{
+
+    padding:30px;
+
+}
+
+.why-content h4{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#132238;
+
+    margin-bottom:15px;
+
+}
+
+.why-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+        SERVICES
+=========================== */
+
+.services{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+.service-card{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+
+    height:100%;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.service-card img{
+
+    width:100%;
+
+    height:270px;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+.service-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.service-content{
+
+    padding:30px;
+
+}
+
+.service-content h4{
+
+    color:#132238;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.service-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+
+}
+
+/* ===========================
+      PORTFOLIO PREVIEW
+=========================== */
+
+.portfolio-preview{
+
+    padding:80px 0;
+
+    background:#f7f9fc;
+
+}
+
+.portfolio-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+
+}
+
+.portfolio-item:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.portfolio-item img{
+
+    width:100%;
+
+    height:330px;
+
+    object-fit:cover;
+
+    transition:.6s ease;
+
+}
+
+.portfolio-item:hover img{
+
+    transform:scale(1.1);
+
+}
+
+.portfolio-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(0,0,0,.05),
+        rgba(0,0,0,.75)
+    );
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    padding:30px;
+
+    opacity:0;
+
+    transition:.45s ease;
+
+}
+
+.portfolio-item:hover .portfolio-overlay{
+
+    opacity:1;
+
+}
+
+.portfolio-overlay h4{
+
+    color:#fff;
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+    transform:translateY(20px);
+
+    transition:.45s;
+
+}
+
+.portfolio-overlay a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    background:#0f8f8f;
+
+    padding:12px 25px;
+
+    border-radius:50px;
+
+    transform:translateY(20px);
+
+    transition:.45s;
+
+}
+
+.portfolio-item:hover .portfolio-overlay h4,
+
+.portfolio-item:hover .portfolio-overlay a{
+
+    transform:translateY(0);
 
 }
