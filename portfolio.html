@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Eminence Interior</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!--================== Navbar ==================-->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler bg-light" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--==============================
+        PORTFOLIO HERO
+================================-->
+<section class="portfolio-hero">
+    <div class="portfolio-hero-overlay"></div>
+    <div class="container">
+        <div class="portfolio-hero-content">
+            <span class="section-tag reveal">Our Portfolio</span>
+            <h1 class="reveal">Crafting Spaces<br>That Inspire</h1>
+            <p class="reveal">
+                Explore our completed interior projects showcasing elegance,
+                creativity, and exceptional craftsmanship delivered across
+                homes, offices and commercial spaces.
+            </p>
+            <div class="breadcrumb reveal">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <strong>Portfolio</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==============================
+        FILTER + GALLERY
+================================-->
+<section class="portfolio-gallery-section">
+    <div class="container">
+
+        <!-- Filter Buttons -->
+        <div class="text-center mb-5 reveal">
+            <span class="section-tag">Our Work</span>
+            <h2 class="section-title mt-3">Completed Interior Projects</h2>
+            <p class="section-subtitle">
+                Browse through our carefully curated portfolio of residential,
+                commercial and office interior projects.
+            </p>
+        </div>
+
+        <div class="filter-bar reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="residential">Residential</button>
+            <button class="filter-btn" data-filter="office">Office</button>
+            <button class="filter-btn" data-filter="pop-ceiling">POP Ceiling</button>
+            <button class="filter-btn" data-filter="wallpaper">Wallpaper</button>
+            <button class="filter-btn" data-filter="furniture">Furniture</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolioGrid">
+
+            <div class="port-item reveal" data-category="residential">
+                <div class="port-card">
+                    <img src="images/portfolio/portfolio1.png" alt="Luxury Living Room">
+                    <div class="port-overlay">
+                        <div class="port-overlay-content">
+                            <span class="port-category">Residential</span>
+                            <h4>Luxury Living Room</h4>
+                            <a href="#" class="port-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-item reveal" data-category="pop-ceiling">
+                <div class="port-card">
+                    <img src="images/portfolio/portfolio9.png" alt="Modern POP Ceiling">
+                    <div class="port-overlay">
+                        <div class="port-overlay-content">
+                            <span class="port-category">POP Ceiling</span>
+                            <h4>Modern POP Ceiling</h4>
+                            <a href="#" class="port-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-item reveal" data-category="office">
+                <div class="port-card">
+                    <img src="images/portfolio/portfolio7.png" alt="Executive Office">
+                    <div class="port-overlay">
+                        <div class="port-overlay-content">
+                            <span class="port-category">Office</span>
+                            <h4>Executive Office</h4>
+                            <a href="#" class="port-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="port-item reveal" data-category="wallpaper">
+                <div class="port-card">
+                    <img src="images/portfolio/portfolio10.png" alt="Premium Wallpaper">
+                    <div class="port-overlay">
+                        <div class="port-overlay-content">
+                            <span class="port-category">Wallpaper</span>
+                            <h4>Premium Wallpaper</h4>
+                            <a href="#" class="port-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-item reveal" data-category="residential">
+                <div class="port-card">
+                    <img src="images/portfolio/portfolio11.png" alt="Kitchen Interior">
+                    <div class="port-overlay">
+                        <div class="port-overlay-content">
+                            <span class="port-category">Residential</span>
+                            <h4>Kitchen Interior</h4>
+                            <a href="#" class="port-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-item reveal" data-category="office">
+                <div class="port-card">
+                    <img src="images/portfolio/portfolio6.png" alt="Hotel Reception">
+                    <div class="port-overlay">
+                        <div class="port-overlay-content">
+                            <span class="port-category">Office</span>
+                            <h4>Hotel Reception</h4>
+                            <a href="#" class="port-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-item reveal" data-category="residential">
+                <div class="port-card">
+                    <img src="images/portfolio/portfolio4.png" alt="Master Bedroom">
+                    <div class="port-overlay">
+                        <div class="port-overlay-content">
+                            <span class="port-category">Residential</span>
+                            <h4>Master Bedroom</h4>
+                            <a href="#" class="port-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-item reveal" data-category="office">
+                <div class="port-card">
+                    <img src="images/portfolio/portfolio8.png" alt="Commercial Space">
+                    <div class="port-overlay">
+                        <div class="port-overlay-content">
+                            <span class="port-category">Office</span>
+                            <h4>Commercial Space</h4>
+                            <a href="#" class="port-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-item reveal" data-category="furniture">
+                <div class="port-card">
+                    <img src="images/portfolio/portfolio12.png" alt="Custom Furniture">
+                    <div class="port-overlay">
+                        <div class="port-overlay-content">
+                            <span class="port-category">Furniture</span>
+                            <h4>Custom Furniture</h4>
+                            <a href="#" class="port-arrow"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /#portfolioGrid -->
+    </div><!-- /.container -->
+</section>
+
+
+<!--==============================
+        STATISTICS
+================================-->
+<section class="portfolio-stats">
+    <div class="stats-overlay"></div>
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="stat-card reveal">
+                    <div class="stat-icon"><i class="bi bi-building"></i></div>
+                    <div class="stat-number" data-target="250">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="stat-card reveal">
+                    <div class="stat-icon"><i class="bi bi-people"></i></div>
+                    <div class="stat-number" data-target="180">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="stat-card reveal">
+                    <div class="stat-icon"><i class="bi bi-clock-history"></i></div>
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="stat-card reveal">
+                    <div class="stat-icon"><i class="bi bi-geo-alt"></i></div>
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Cities Served</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!--==============================
+        TESTIMONIALS
+================================-->
+<section class="testimonials-section">
+    <div class="container">
+
+        <div class="text-center mb-5 reveal">
+            <span class="section-tag">Client Reviews</span>
+            <h2 class="section-title mt-3">What Our Clients Say</h2>
+            <p class="section-subtitle">
+                Real words from satisfied clients who trusted Eminence Interior
+                to transform their spaces.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6 reveal">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">
+                        Eminence Interior completely transformed our living room.
+                        The POP ceiling they installed is absolutely stunning —
+                        every guest who visits can't stop admiring it. Top-tier
+                        craftsmanship and very professional team.
+                    </p>
+                    <div class="testimonial-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div>
+                            <h6>Adaeze Mensah</h6>
+                            <span>Homeowner, Lagos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 reveal">
+                <div class="testimonial-card featured">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">
+                        We hired Eminence to renovate our entire office space and
+                        the result exceeded every expectation. From the wallpaper
+                        to the furniture installation, everything was delivered
+                        on time and with outstanding precision.
+                    </p>
+                    <div class="testimonial-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TK</div>
+                        <div>
+                            <h6>Tunde Kolawole</h6>
+                            <span>Business Owner, Abuja</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 reveal">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">
+                        The master bedroom renovation was flawless. They listened
+                        to every detail of what I wanted and brought it to life
+                        beautifully. I would highly recommend Eminence Interior
+                        to anyone looking for quality and elegance.
+                    </p>
+                    <div class="testimonial-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">FO</div>
+                        <div>
+                            <h6>Funmi Okafor</h6>
+                            <span>Interior Enthusiast, Port Harcourt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!--==============================
+        PORTFOLIO CTA
+================================-->
+<section class="portfolio-cta">
+    <div class="portfolio-cta-overlay"></div>
+    <div class="container">
+        <div class="portfolio-cta-content reveal">
+            <span class="section-tag">Let's Build Something Beautiful</span>
+            <h2>Ready to Transform<br>Your Space?</h2>
+            <p>
+                From luxury homes to stunning commercial interiors, our team
+                delivers exceptional craftsmanship that brings every vision to life.
+                Let's start your project today.
+            </p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-main">
+                    Get Free Consultation
+                </a>
+                <a href="services.html" class="btn-outline">
+                    <i class="bi bi-grid-3x3-gap me-2"></i>Our Services
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--================== FOOTER ==================-->
+<footer class="footer">
+    <div class="container">
+        <div class="row gy-5">
+
+            <div class="col-lg-4">
+                <img src="images/logo/logo.png" class="footer-logo" alt="Logo">
+                <p class="footer-text">
+                    Creating beautiful interiors with creativity, quality
+                    and professionalism. We transform ordinary spaces into
+                    elegant environments.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/eminence_interior" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/2347067063796" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://jiji.ng/shop/emineceinterior" target="_blank">
+                        <i class="fas fa-store"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3">
+                <h5>Services</h5>
+                <ul>
+                    <li>POP Ceilings</li>
+                    <li>Painting</li>
+                    <li>Wallpaper</li>
+                    <li>Furniture</li>
+                    <li>3D Wall Panels</li>
+                    <li>General Contracting</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3">
+                <h5>Contact</h5>
+                <ul>
+                    <li>
+                        <a href="tel:+2348022708743">
+                            <i class="fas fa-phone"></i> +234 802 270 8743
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/2347067063796" target="_blank">
+                            <i class="fab fa-whatsapp"></i> +234 706 706 3796
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:mhaztermyke@gmail.com">
+                            <i class="fas fa-envelope"></i> mhaztermyke@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://maps.google.com/?q=40+Olainukan+Street,+Ifako-Ijaiye,+Lagos" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i> Ifako-Ijaiye, Lagos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            © 2026 Eminence Interior. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+
+<script>
+// ── Navbar scroll effect ──────────────────────────────────────
+window.addEventListener("scroll", function () {
+    document.querySelector(".navbar").classList.toggle("scrolled", window.scrollY > 50);
+});
+
+// ── Filter logic ──────────────────────────────────────────────
+const filterBtns = document.querySelectorAll(".filter-btn");
+const portItems  = document.querySelectorAll(".port-item");
+
+filterBtns.forEach(btn => {
+    btn.addEventListener("click", function () {
+        filterBtns.forEach(b => b.classList.remove("active"));
+        this.classList.add("active");
+
+        const filter = this.dataset.filter;
+
+        portItems.forEach(item => {
+            const match = filter === "all" || item.dataset.category === filter;
+            if (match) {
+                item.style.display = "block";
+                item.style.animation = "fadeUp 0.5s ease forwards";
+            } else {
+                item.style.display = "none";
+            }
+        });
+    });
+});
+
+// ── Animated counters ─────────────────────────────────────────
+function animateCounter(el) {
+    const target   = +el.dataset.target;
+    const duration = 2000;
+    const step     = target / (duration / 16);
+    let current    = 0;
+
+    const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+            current = target;
+            clearInterval(timer);
+        }
+        el.textContent = Math.floor(current);
+    }, 16);
+}
+
+// ── Scroll reveal ─────────────────────────────────────────────
+const revealEls = document.querySelectorAll(".reveal");
+let countersStarted = false;
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+revealEls.forEach(el => observer.observe(el));
+
+// Trigger counters when stats section enters view
+const statsSection = document.querySelector(".portfolio-stats");
+if (statsSection) {
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !countersStarted) {
+                countersStarted = true;
+                document.querySelectorAll(".stat-number").forEach(animateCounter);
+            }
+        });
+    }, { threshold: 0.3 });
+    statsObserver.observe(statsSection);
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
