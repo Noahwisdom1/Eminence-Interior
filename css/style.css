@@ -239,156 +239,12 @@ body{
 
 }
 
+/* Legacy 768px block — kept minimal; detailed rules are in the
+   Global Responsive Improvements section at the bottom of this file */
 @media (max-width:768px){
 
-.hero{
-
-    text-align:center;
-
-}
-
-.hero h1{
-
-    font-size:38px;
-
-}
-
-.hero p{
-
-    font-size:16px;
-
-}
-
-.hero-btns{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-.btn-main,
-
-.btn-outline-light{
-
-    width:100%;
-
-}
-.services{
-
-    padding:80px 0;
-
-}
-
 .service-content{
-
     text-align:center;
-
-}
-
-.service-content h4{
-
-    font-size:22px;
-
-}
-
-.portfolio-preview{
-
-    padding:80px 0;
-
-}
-
-.portfolio-item img{
-
-    height:250px;
-
-}
-
-.contact-preview{
-
-    padding:80px 0;
-
-}
-
-.contact-preview .section-title,
-
-.contact-preview .section-description{
-
-    text-align:center;
-
-}
-
-.contact-preview .btn-main{
-
-    display:block;
-
-    width:fit-content;
-
-    margin:30px auto;
-
-}
-
-.contact-card{
-
-    padding:30px 20px;
-
-}
-
-.footer{
-
-    text-align:center;
-
-}
-
-.footer-logo{
-
-    margin:auto auto 25px;
-
-}
-
-.social-links{
-
-    justify-content:center;
-
-}
-
-
-.page-hero{
-
-    min-height:55vh;
-
-}
-
-.page-hero h1{
-
-    font-size:40px;
-
-}
-
-.page-hero p{
-
-    font-size:16px;
-
-}
-
-.about-cta-box{
-
-padding:50px 30px;
-
-}
-
-.about-cta-box h2{
-
-font-size:38px;
-
-}
-
-.about-cta-box p{
-
-font-size:16px;
-
 }
 
 }
@@ -2691,6 +2547,9 @@ margin-right:10px;
 
 /* ── Portfolio Responsive ───────────────────────── */
 @media (max-width: 991px) {
+    .portfolio-hero {
+        margin-top: 70px;
+    }
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -2710,6 +2569,7 @@ margin-right:10px;
 
 @media (max-width: 767px) {
     .portfolio-hero {
+        margin-top: 65px;
         min-height: 75vh;
     }
     .portfolio-hero-content h1 {
@@ -2754,5 +2614,848 @@ margin-right:10px;
     }
     .portfolio-hero-content h1 {
         font-size: 32px;
+    }
+    .portfolio-hero-content p {
+        font-size: 14px;
+    }
+    .portfolio-hero-content {
+        padding: 60px 16px 40px;
+    }
+}
+
+/* Portfolio page section padding adjustments */
+@media (max-width: 991px) {
+    .portfolio-gallery-section {
+        padding: 70px 0 80px;
+    }
+    .portfolio-stats {
+        padding: 90px 0;
+    }
+    .testimonials-section {
+        padding: 80px 0;
+    }
+    .portfolio-cta {
+        padding: 110px 0;
+    }
+    .portfolio-cta-content h2 {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 767px) {
+    .portfolio-gallery-section {
+        padding: 50px 0 60px;
+    }
+    .portfolio-stats {
+        padding: 60px 0;
+    }
+    .testimonials-section {
+        padding: 60px 0;
+    }
+    .portfolio-cta {
+        padding: 80px 0;
+    }
+    .portfolio-cta-content h2 {
+        font-size: 30px;
+        margin: 18px 0 20px;
+    }
+    .portfolio-cta-content p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .portfolio-cta-content .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-cta-content .btn-main,
+    .portfolio-cta-content .btn-outline {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+}
+
+/* =======================================================
+   GLOBAL RESPONSIVE IMPROVEMENTS
+   Covers: index, about, services, portfolio
+   Breakpoints: 1200px (xl), 991px (lg), 768px (md), 480px (sm)
+======================================================= */
+
+/* ── Define section-padding utility ───────────────── */
+.section-padding {
+    padding: 100px 0;
+}
+
+/* ── Navbar mobile improvements ──────────────────── */
+@media (max-width: 991px) {
+    .navbar-brand img {
+        width: 110px;
+    }
+    .navbar-collapse {
+        background: rgba(13, 18, 35, 0.98);
+        padding: 16px 20px;
+        border-radius: 0 0 16px 16px;
+        margin-top: 10px;
+    }
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    .nav-link::after {
+        display: none;
+    }
+}
+
+/* ── Section title scaling ───────────────────────── */
+@media (max-width: 1199px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    .section-description,
+    .section-subtitle {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* ── Hero section (index.html) ───────────────────── */
+@media (max-width: 1199px) {
+    .hero h1 {
+        font-size: 58px;
+    }
+    .hero .container {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero {
+        margin-top: 70px;
+    }
+    .hero .container {
+        padding-top: 60px;
+    }
+    .hero h1 {
+        font-size: 48px;
+    }
+    .hero p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        text-align: center;
+        margin-top: 65px;
+    }
+    .hero .container {
+        padding-top: 40px;
+    }
+    .hero h1 {
+        font-size: 34px;
+        line-height: 1.25;
+    }
+    .hero p {
+        font-size: 15px;
+        margin: 0 auto;
+    }
+    .hero-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        margin-top: 28px;
+    }
+    .hero-btns .btn-main,
+    .hero-btns .btn-outline-light {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+        padding: 13px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero-tag {
+        font-size: 13px;
+        padding: 6px 14px;
+    }
+}
+
+/* ── About section (index.html) ─────────────────── */
+@media (max-width: 991px) {
+    .about {
+        padding: 80px 0;
+    }
+    .about-img {
+        height: 420px;
+    }
+    .about-features p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        padding: 60px 0;
+    }
+    .about-img {
+        height: 300px;
+        border-radius: 16px;
+    }
+    .about-text {
+        font-size: 15px;
+    }
+    .about-features {
+        margin-top: 24px;
+    }
+    .about-features p {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+}
+
+/* ── Why Us section (index.html) ─────────────────── */
+@media (max-width: 991px) {
+    .why-us {
+        padding: 80px 0;
+    }
+    .why-image img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 767px) {
+    .why-us {
+        padding: 60px 0;
+    }
+    .why-content {
+        padding: 20px;
+    }
+    .why-content h4 {
+        font-size: 20px;
+    }
+}
+
+/* ── Services section (index.html) ──────────────── */
+@media (max-width: 991px) {
+    .services {
+        padding: 80px 0;
+    }
+    .service-card img {
+        height: 220px;
+    }
+    .service-content h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services {
+        padding: 60px 0;
+    }
+    .service-content {
+        padding: 20px;
+    }
+}
+
+/* ── Portfolio preview (index.html) ─────────────── */
+@media (max-width: 991px) {
+    .portfolio-preview {
+        padding: 80px 0;
+    }
+    .portfolio-item img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 767px) {
+    .portfolio-preview {
+        padding: 60px 0;
+    }
+    .portfolio-item img {
+        height: 220px;
+    }
+}
+
+/* ── Contact preview (index.html) ───────────────── */
+@media (max-width: 991px) {
+    .contact-preview {
+        padding: 80px 0;
+    }
+    .contact-card {
+        padding: 28px 20px;
+    }
+    .contact-card i {
+        font-size: 34px;
+    }
+    .contact-card h5 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-preview {
+        padding: 60px 0;
+        text-align: center;
+    }
+    .contact-preview .section-title,
+    .contact-preview .section-description {
+        text-align: center;
+    }
+    .contact-preview .btn-main {
+        display: block;
+        width: fit-content;
+        margin: 24px auto 0;
+    }
+    .contact-card {
+        padding: 24px 16px;
+    }
+}
+
+/* ── CTA section (index.html) ───────────────────── */
+@media (max-width: 1199px) {
+    .cta-content h2 {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 991px) {
+    .cta-section {
+        padding: 100px 0;
+    }
+    .cta-content h2 {
+        font-size: 38px;
+    }
+    .cta-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cta-section {
+        padding: 70px 0;
+    }
+    .cta-content h2 {
+        font-size: 30px;
+        margin: 18px 0;
+    }
+    .cta-content p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .cta-buttons {
+        gap: 14px;
+    }
+    .btn-main,
+    .btn-outline {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        padding: 13px 24px;
+    }
+}
+
+/* ── Page hero (about, services) ─────────────────── */
+@media (max-width: 1199px) {
+    .page-hero h1 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 991px) {
+    .page-hero {
+        min-height: 70vh;
+        padding-top: 100px;
+        padding-bottom: 80px;
+        margin-top: 70px;
+    }
+    .page-hero h1 {
+        font-size: 44px;
+    }
+    .page-hero p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-hero {
+        min-height: auto;
+        padding: 90px 0 60px;
+        margin-top: 65px;
+    }
+    .page-hero h1 {
+        font-size: 32px;
+        margin: 18px 0;
+    }
+    .page-hero p {
+        font-size: 15px;
+    }
+    .breadcrumb {
+        margin-top: 24px;
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero h1 {
+        font-size: 27px;
+    }
+}
+
+/* ── Company story (about.html) ─────────────────── */
+@media (max-width: 991px) {
+    .company-story {
+        padding: 80px 0;
+    }
+    .story-image img {
+        height: 420px;
+    }
+    .section-padding {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .company-story {
+        padding: 60px 0;
+    }
+    .story-image img {
+        height: 260px;
+        border-radius: 16px;
+    }
+    .story-image {
+        border-radius: 16px;
+    }
+    .story-text {
+        font-size: 15px;
+    }
+    .feature-box {
+        padding: 14px 16px;
+    }
+    .feature-box span {
+        font-size: 14px;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+}
+
+/* ── Process cards (about + services) ───────────── */
+@media (max-width: 991px) {
+    .process-card {
+        padding: 35px 24px;
+    }
+    .process-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 26px;
+    }
+    .process-card h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .process-card {
+        padding: 28px 20px;
+    }
+    .process-number {
+        font-size: 30px;
+    }
+    .process-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+    .process-card h4 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+}
+
+/* ── Core values (about.html) ───────────────────── */
+@media (max-width: 991px) {
+    .core-values {
+        margin-top: 0;
+    }
+    .value-card {
+        padding: 30px 24px;
+    }
+    .value-icon {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media (max-width: 767px) {
+    .value-card {
+        padding: 24px 18px;
+    }
+    .value-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 18px;
+    }
+    .value-icon i {
+        font-size: 24px;
+    }
+    .value-card h4 {
+        font-size: 18px;
+    }
+}
+
+/* ── Why Eminence (about.html) ──────────────────── */
+@media (max-width: 991px) {
+    .img-large {
+        height: 320px;
+    }
+    .small-images img {
+        height: 160px;
+    }
+    .choose-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .img-large {
+        height: 240px;
+        border-radius: 16px;
+    }
+    .small-images {
+        gap: 12px;
+    }
+    .small-images img {
+        height: 130px;
+        border-radius: 14px;
+    }
+    .image-grid {
+        gap: 12px;
+    }
+    .choose-item {
+        font-size: 15px;
+        gap: 10px;
+    }
+    .choose-item i {
+        font-size: 18px;
+    }
+}
+
+/* ── About CTA (about.html) ─────────────────────── */
+@media (max-width: 1199px) {
+    .about-cta-box h2 {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-cta {
+        padding: 70px 0;
+    }
+    .about-cta-box {
+        padding: 60px 40px;
+        border-radius: 20px;
+    }
+    .about-cta-box h2 {
+        font-size: 38px;
+        margin: 18px 0;
+    }
+    .about-cta-box p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-cta {
+        padding: 50px 0;
+    }
+    .about-cta-box {
+        padding: 40px 24px;
+        border-radius: 16px;
+    }
+    .about-cta-box h2 {
+        font-size: 28px;
+        margin: 14px 0;
+    }
+    .about-cta-box p {
+        font-size: 15px;
+    }
+    .about-cta-box .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-cta-box .btn-main,
+    .about-cta-box .btn-outline {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+}
+
+/* ── Services hero ───────────────────────────────── */
+@media (max-width: 1199px) {
+    .hero-content h1 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 991px) {
+    .services-hero {
+        min-height: 70vh;
+    }
+    .hero-content {
+        padding-top: 50px;
+    }
+    .hero-content h1 {
+        font-size: 42px;
+    }
+    .hero-content p {
+        font-size: 16px;
+        margin: 18px auto 30px;
+    }
+    .hero-buttons {
+        gap: 14px;
+        margin-top: 28px;
+    }
+    .btn-primary,
+    .btn-secondary {
+        padding: 13px 26px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-hero {
+        min-height: auto;
+        padding: 50px 0;
+    }
+    .hero-content {
+        padding-top: 30px;
+    }
+    .hero-content h1 {
+        font-size: 30px;
+        line-height: 1.25;
+        margin: 16px auto;
+    }
+    .hero-content p {
+        font-size: 15px;
+        margin: 14px auto 24px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 26px;
+    }
+}
+
+/* ── Service detail cards (services.html) ────────── */
+@media (max-width: 991px) {
+    .services-main {
+        padding: 80px 0;
+    }
+    .service-details-card img {
+        height: 220px;
+    }
+    .service-body h3 {
+        font-size: 22px;
+    }
+    .service-body {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-main {
+        padding: 60px 0;
+    }
+    .service-details-card img {
+        height: 200px;
+    }
+    .service-body h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .service-body p {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+    .service-body ul li {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .service-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+}
+
+/* ── Services CTA (services.html) ───────────────── */
+@media (max-width: 1199px) {
+    .cta-box h2 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 991px) {
+    .services-cta {
+        padding: 100px 0;
+    }
+    .cta-box h2 {
+        font-size: 36px;
+    }
+    .cta-box p {
+        font-size: 16px;
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-cta {
+        padding: 70px 0;
+    }
+    .cta-box h2 {
+        font-size: 28px;
+        margin: 18px 0 20px;
+    }
+    .cta-box p {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+    .cta-box .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-box .btn-main,
+    .cta-box .btn-outline {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+}
+
+/* ── Footer responsive ────────────────────────────── */
+@media (max-width: 991px) {
+    .footer {
+        padding: 70px 0 24px;
+    }
+    .footer-logo {
+        width: 160px;
+    }
+    .footer h5 {
+        margin-bottom: 18px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 56px 0 20px;
+        text-align: center;
+    }
+    .footer-logo {
+        margin: 0 auto 20px;
+        display: block;
+    }
+    .footer-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .social-links {
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+    .social-links a {
+        width: 42px;
+        height: 42px;
+    }
+    .footer h5 {
+        margin-top: 16px;
+        margin-bottom: 14px;
+    }
+    .footer ul li {
+        margin-bottom: 10px;
+    }
+    .footer ul li a i {
+        margin-right: 8px;
+    }
+    .footer hr {
+        margin: 40px 0 18px;
+    }
+    .footer-bottom {
+        font-size: 13px;
+    }
+}
+
+/* ── General spacing fixes for mobile ───────────── */
+@media (max-width: 767px) {
+    .py-5 {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .mb-5 {
+        margin-bottom: 36px !important;
+    }
+    .mt-5 {
+        margin-top: 36px !important;
+    }
+    .gy-5 {
+        --bs-gutter-y: 2rem;
+    }
+    .g-4 {
+        --bs-gutter-x: 1rem;
+        --bs-gutter-y: 1rem;
+    }
+    /* Buttons consistent sizing on mobile */
+    .btn-main {
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .py-5 {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    .section-tag {
+        font-size: 13px;
+        padding: 8px 18px;
     }
 }
