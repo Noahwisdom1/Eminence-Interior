@@ -1,0 +1,44 @@
+# ============================================================
+#  Eminence Interior — Apache / cPanel URL Rewrite Rules
+#  Clean URLs: removes .html extension from public-facing URLs
+# ============================================================
+
+Options -Indexes
+Options +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # ── 1. Force HTTPS (uncomment when SSL is active on hosting) ──
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # ── 2. Do NOT rewrite real files or directories ──────────────
+    #     (CSS, JS, images, fonts etc. continue to work normally)
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # ── 3. Redirect old .html URLs → clean URLs (301 permanent) ──
+    #     Prevents duplicate content; old bookmarks/links still work
+    RewriteCond %{THE_REQUEST} \s/+(index|about|services|portfolio|contact)\.html[\s?] [NC]
+    RewriteRule ^(index|about|services|portfolio|contact)\.html$ /%1 [R=301,L]
+
+    # ── 4. Special case: redirect /index → / ─────────────────────
+    RewriteRule ^index/?$ / [R=301,L]
+
+    # ── 5. Serve clean URLs by internally mapping to .html files ──
+    #     /about      → about.html
+    #     /services   → services.html
+    #     /portfolio  → portfolio.html
+    #     /contact    → contact.html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI}.html -f
+    RewriteRule ^([^/]+)/?$ $1.html [L]
+
+</IfModule>
+
+# ── Custom error pages (optional, safe to keep) ──────────────
+# ErrorDocument 404 /404.html
